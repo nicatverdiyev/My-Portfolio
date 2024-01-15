@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=M+PLUS+Rounded+1c:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import './variables.scss';
+@import './reset.scss';
+
+html{
+    scroll-behavior:smooth;
+}
+body{
+    color: $--first-color;
+    background-color: $--body-bg-color;
+    margin: 2rem 0 0 0;
+    transition: .5s ease;
+
+}
+// ----HEADER---START----
+
+header{
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(20px);
+    transition: .6s ease;
+}
+
+.navBar{
+    position: relative;
+    height: calc(4rem + 1rem);
+    max-width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    transition: .6s ease;
+
+    & .logo{
+        color: $--first-color;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+}
+ 
+.navItems a{
+    color: $--first-color;
+    font-size: $--normal-font-size;
+    font-weight: 500;
+}
+// Menu arasındakı boşluqlar
+.navItems a:not(:last-child){
+    margin-right: 50px;
+}
+.navItems a:hover{
+    color: $--second-color;
+}
+// ----HEADER---END----
+
+// ---Ana sehife---SECTİON---STAR---
+
+.home{
+    position: relative;
+    max-width: 1250px;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4rem 2rem;
+    flex-direction: column;
+
+    & .homeContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        & .media-icons{
+            display: flex;
+            flex-direction: column;
+            margin-right: 40px;
+        }
+    }
+}
+
+// ---Ana sehife---SECTİON---END---
