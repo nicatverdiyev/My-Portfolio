@@ -58,9 +58,9 @@ header{
 // ----HEADER---END----
 
 // ---Ana sehife---SECTİON---STAR---
-// .homeImage{
-//    margin-right: -8rem;
-// }
+ .homeImage{
+    margin-right: -8rem;
+ }
 .home{
     position: relative;
     max-width: 1250px;
@@ -139,6 +139,93 @@ header{
 .btn:hover{
     background: $--hover-color;
 }
-
-
 // ---Ana sehife---SECTİON---END---
+
+// <!-- -----HAQQINDA----BÖLMƏSİ---START--- -->
+
+.section{
+    position: relative;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6rem 2rem 2rem;
+}
+.sub-section{
+    position: relative;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6rem 0;
+}
+.section-title-01{
+    font-size: 4.5em;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    background: linear-gradient(to top, transparent 0%, $--first-color 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: .1;
+}
+.section-title-02{
+    font-size: 2.5em;
+    font-weight: 700;
+    transform: translateY(-80px);
+}
+.section-title-02::before{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 5px;
+    right: 0;
+    bottom: 0;
+    background: $--second-color;
+}
+.container{
+    position: relative;
+    flex-direction: column;
+}
+
+.aboutMe .container .content{
+    column-gap: 40px;
+    width: 100%;
+}
+.aboutMe-img{
+    position: relative;
+
+    & img{
+        max-width: 100%;
+        min-width: 500px;
+        border-radius: 10px;
+    }
+}
+.aboutMe-info{
+
+
+    & .description{
+        & h3{
+            font-size: 2em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        & h4{
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 10px;
+
+            & span{
+                color: $--second-color;
+            }
+        }
+
+        & p{
+            color: $--third-color;
+            font-size: $--normal-font-size;
+            margin-bottom: 15px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid $--line-color;
+        }
+    }
+    
+}
+// <!-- -----HAQQINDA----BÖLMƏSİ---END--- -->
+
