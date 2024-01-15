@@ -58,7 +58,9 @@ header{
 // ----HEADER---END----
 
 // ---Ana sehife---SECTİON---STAR---
-
+// .homeImage{
+//    margin-right: -8rem;
+// }
 .home{
     position: relative;
     max-width: 1250px;
@@ -78,8 +80,65 @@ header{
             display: flex;
             flex-direction: column;
             margin-right: 40px;
+
+            & a{
+                color: $--second-color;
+                font-size: 1.5rem;
+                margin: 10px 0;
+            }
+
+            & a:hover{
+                color: $--hover-color;
+            }
+
+        }
+
+        .info{
+            & h2{
+                font-size: 4rem;
+                font-weight: 600;
+                line-height: 70px;
+            }
+
+            & h3{
+                color: $--third-color;
+                font-feature-settings: 1.3rem;
+                font-weight: 600;
+                line-height: 50px;
+            }
+
+            & p{
+                color: $--third-color;
+                font-size: $--normal-font-size;
+                max-width: 350px;
+            }
+        }
+
+        & .homeImage{
+            position: relative;
+
+            & img{
+                width: 75%;
+                transform: translate(0,0);
+            }
         }
     }
 }
+
+.btn{
+    background: $--second-color;
+    color: $--modal-bg-color;
+    font-size: $--normal-font-size;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 25px;
+    padding: 20px 30px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+.btn:hover{
+    background: $--hover-color;
+}
+
 
 // ---Ana sehife---SECTİON---END---
