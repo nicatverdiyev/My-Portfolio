@@ -304,6 +304,11 @@ header.sticky{
         }
 
     }
+
+}
+
+.educationList .item:hover, .bar:hover, .experienceCard:hover{
+    transform: scale(1.03);
 }
 
 .bar{
@@ -365,5 +370,40 @@ header.sticky{
 
     }
 }
+
+.experienceCard{
+    background-color: $--card-bg-color;
+    border-bottom: 3px solid $--second-color;
+    padding: 35px;
+    border-radius: 6px;
+    box-shadow: $--box-shadow;
+    transition: .3s ease;
+
+    & .upper{
+        line-height: 30px;
+    }
+
+    & h3{
+        font-size: 1.3rem;
+        font-weight: 700;
+
+    }
+    & h5{
+        font-size: $--small-font-size;
+        font-weight: 500;
+        font-style: italic;
+    }
+
+    & span{
+        color: $--third-color;
+    }
+    & .hr{
+        width: 100%;
+        height: 2px;
+        background-color: $--line-color;
+        margin: 10px 0 22px;
+    }
+}
+
 // -------BACARIQLAR----BÖLMESİ----END---
 
