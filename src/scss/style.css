@@ -347,7 +347,7 @@ header.sticky .navBar {
   width: 85%;
 }
 .bar .bootstrap::before {
-  width: 90%;
+  width: 75%;
 }
 .bar .javascript::before {
   width: 45%;
