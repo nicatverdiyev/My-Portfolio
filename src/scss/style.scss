@@ -407,3 +407,134 @@ header.sticky{
 
 // -------BACARIQLAR----BÖLMESİ----END---
 
+
+// ------PROYEKTLER----BÖLMESİ---START--
+.portfolio .container .content{
+    width: 100%;
+}
+.portfolioList{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 35px;
+}
+.portfolioList{
+    & .imgCard{
+        position: relative;
+        max-width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        box-shadow: $--box-shadow;
+        overflow: hidden;
+        cursor: pointer;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        & .overlay{
+            transition: 1s ease;
+        }
+        & .cardInfo{
+            & h3{
+                font-size: 1.5em;
+            }
+            & span{
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+.portfolioList .imgCard:hover .overlay{
+    z-index: 777;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.1);
+}
+.portfolioList .imgCard .cardInfo{
+    z-index: 777;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    color: #fff;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: .5s ease;
+}
+.portfolioList .imgCard:hover .cardInfo{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.portfolioModel{
+    z-index: 999999;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: $--bg-transparent-color;
+    backdrop-filter: blur(20px);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease;
+}
+.portfolioModelBody{
+    position: relative;
+    background-color: $--modal-bg-color;
+    max-width: 600px;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: $--box-shadow;
+    transform: translateY(-50px);
+    transition: .5s ease;
+}
+.portfolio-close-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+}
+.portfolioModelBody{
+    & h3{
+        font-size: 1.5em;
+    }
+    & img{
+        width: 100%;
+        margin: 20px 0;
+        border-radius: 10px;
+    }
+}
+.portfolioModel.active{
+    visibility: visible;
+    opacity: 1;
+}
+.portfolioModel.active .portfolioModelBody{
+    transform: translateY(0);
+}
+.portfolioModelBody{
+    
+      
+    
+        & button{
+            background: $--second-color;
+            color: $--card-bg-color;
+            font-size: $--normal-font-size;
+            border: none;
+            font-weight: 400;
+            padding: 5px 15px;
+            border-radius: 5px;
+
+            
+            & a{
+                color: $--card-bg-color;
+
+            }
+        }
+    
+}
+
+// ------PROYEKTLER----BÖLMESİ---END--
