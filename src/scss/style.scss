@@ -538,3 +538,17 @@ header.sticky{
 }
 
 // ------PROYEKTLER----BÖLMESİ---END--
+
+// -------ELAQE----BÖLMESİ----START---
+
+.contact{
+    & .container{
+        & .content{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+
+// -------ELAQE----BÖLMESİ----END---

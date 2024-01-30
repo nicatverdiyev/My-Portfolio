@@ -510,4 +510,9 @@ header.sticky .navBar {
 }
 .portfolioModelBody button a {
   color: #fff;
+}
+
+.contact .container .content {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

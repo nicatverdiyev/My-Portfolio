@@ -29,3 +29,4 @@ portfolioCloseBtns.forEach((portfolioCloseBtn)=> {
     });
 });
 // ----GÖRÜLEN İŞLER BOLMESİ POPUP CARD---END----
+
