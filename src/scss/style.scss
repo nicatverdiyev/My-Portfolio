@@ -143,6 +143,8 @@ header.sticky{
     padding: 20px 30px;
     letter-spacing: 1px;
     border-radius: 10px;
+    border: none;
+    cursor: pointer;
 }
 .btn:hover{
     background: $--hover-color;
@@ -546,9 +548,85 @@ header.sticky{
         & .content{
             display: flex;
             justify-content: space-between;
+            width: 100%;
+            & .contactLeft{
+                & h2{
+                    font-size: 2.1em;
+                    font-weight: 800px;
+                    margin-bottom: 40px;
+                }
+                & .contactList li{
+                    margin-bottom: 40px;
+
+                    & span{
+                        color: $--third-color;
+                        margin-left: 40px;
+
+                        & a{
+                            color: $--third-color;
+                        }
+                    }
+
+                    & h3{
+                        font-size: 1.3em;
+                        font-weight: 600;
+                        margin-bottom: 10px;
+
+                        & i{
+                            color: $--second-color;
+                            font-size: 1.3em;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+               
+            }
+
+            & .contactRight{
+                & p{
+                    color: $--third-color;
+                    font-size: 1.6em;
+                    margin-bottom: 30px;
+
+                    & span{
+                        color: $--first-color;
+                        font-weight: 700;
+                    }
+                }
+                & .secondRow{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                & .secondRow input{
+                    width: 48%;
+                }
+                & .firstRow input{
+                    width: 100%;
+                }
+
+                & input,textarea{
+                    border: none;
+                    color: $--first-color;
+                    background-color: $--transparent-color-02;
+                    font-size: $--normal-font-size;
+                    margin-bottom: 20px;
+                    padding: 15px 40px 40px 20px;
+                    border-radius: 5px;
+                }
+                & textarea{
+                    width: 100%;
+                    resize: none;
+                }
+               
+            }
         }
     }
 }
+
+::placeholder{
+    color: $--first-color;
+}
+
 
 
 // -------ELAQE----BÖLMESİ----END---

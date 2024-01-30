@@ -154,6 +154,8 @@ header.sticky .navBar {
   padding: 20px 30px;
   letter-spacing: 1px;
   border-radius: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -515,4 +517,70 @@ header.sticky .navBar {
 .contact .container .content {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+}
+.contact .container .content .contactLeft h2 {
+  font-size: 2.1em;
+  font-weight: 800px;
+  margin-bottom: 40px;
+}
+.contact .container .content .contactLeft .contactList li {
+  margin-bottom: 40px;
+}
+.contact .container .content .contactLeft .contactList li span {
+  color: #777;
+  margin-left: 40px;
+}
+.contact .container .content .contactLeft .contactList li span a {
+  color: #777;
+}
+.contact .container .content .contactLeft .contactList li h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact .container .content .contactLeft .contactList li h3 i {
+  color: #6a59d1;
+  font-size: 1.3em;
+  padding-right: 10px;
+}
+.contact .container .content .contactRight p {
+  color: #777;
+  font-size: 1.6em;
+  margin-bottom: 30px;
+}
+.contact .container .content .contactRight p span {
+  color: #0e2431;
+  font-weight: 700;
+}
+.contact .container .content .contactRight .secondRow {
+  display: flex;
+  justify-content: space-between;
+}
+.contact .container .content .contactRight .secondRow input {
+  width: 48%;
+}
+.contact .container .content .contactRight .firstRow input {
+  width: 100%;
+}
+.contact .container .content .contactRight input, .contact .container .content .contactRight textarea {
+  border: none;
+  color: #0e2431;
+  background-color: rgba(106, 89, 209, 0.1);
+  font-size: 1em;
+  margin-bottom: 20px;
+  padding: 15px 40px 40px 20px;
+  border-radius: 5px;
+}
+.contact .container .content .contactRight textarea {
+  width: 100%;
+  resize: none;
+}
+
+::-moz-placeholder {
+  color: #0e2431;
+}
+
+::placeholder {
+  color: #0e2431;
 }/*# sourceMappingURL=style.css.map */
