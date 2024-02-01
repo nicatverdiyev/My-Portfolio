@@ -46,4 +46,14 @@ scrollTopBtn.addEventListener("click",()=> {
 // ----DARK--MODE--BUTTON---START----
 
 const themeBtn = document.querySelector(".theme-btn");
+themeBtn.addEventListener("click", ()=> {
+    document.body.classList.toggle("dark-theme");
+    themeBtn.classList.toggle("sun");
+    localStorage.setItem("saved-theme", getCurrentTheme());
+    localStorage.setItem("saved-icon", getCurrentIcon());
+});
+
+const getCurrentIcon = () => themeBtn.classList.contains("sun") ? "sun" : "moon";
+const getCurrentTheme = () => document.body.classList.contains("dark-theme") ? "dark" : "light";
+
 // ----DARK--MODE--BUTTON---END----
