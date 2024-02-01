@@ -30,3 +30,10 @@ portfolioCloseBtns.forEach((portfolioCloseBtn)=> {
 });
 // ----GÖRÜLEN İŞLER BOLMESİ POPUP CARD---END----
 
+// -----SCROLL-TO-TOP---BUTTON---START---
+
+const scrollTopBtn = document.querySelector(".scrollToTop-btn");
+window.addEventListener("scroll",function () {
+    scrollTopBtn.classList.toggle("active",window.scrollY > 500);
+});
+// -----SCROLL-TO-TOP---BUTTON---END---

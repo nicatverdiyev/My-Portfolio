@@ -27,8 +27,14 @@ body{
     font-size: $--small-font-size;
     border-radius: 3px;
     cursor: pointer;
+    opacity: 0;
+    transition: .5s ease;
 }
-
+.scrollToTop-btn.active{
+    right: 20px;
+    pointer-events: all;
+    opacity: 1;
+}
 // <!-- -----SCROLL YUXARI BUTTON-----END--- -->
 
 // ----HEADER---START----
