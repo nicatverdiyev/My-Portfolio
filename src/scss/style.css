@@ -583,4 +583,9 @@ header.sticky .navBar {
 
 ::placeholder {
   color: #0e2431;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
