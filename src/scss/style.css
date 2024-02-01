@@ -1,11 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=M+PLUS+Rounded+1c:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-/*=======Main theme colors=======*/
-/*=======Hover colors=======*/
-/*=======Background colors=======*/
-/*=======Color Filter=======*/
-/*=======Box shadow=======*/
-/*=======Font size=======*/
-/*=======Scroll bar colors=======*/
+.dark-theme {
+  --first-color: #fff;
+  --second-color: #6a59d1;
+  --third-color: #a9afc3;
+  /*=======Background colors=======*/
+  --body-bg-color: #0e1b31;
+  --card-bg-color: #132347;
+  --modal-bg-color: #102048;
+  --bg-transparent-color: rgba(255, 255, 255, 0.1);
+  --transparent-color-01: rgba(255, 255, 255, 0.1);
+  --line-color: #454f6b;
+  /*=======Color Filter=======*/
+  --color-filter: invert(0);
+  /*=======Scroll bar colors=======*/
+  --scroll-bar-color: #c1ceff;
+  --scroll-thumb-color: #282f4e;
+  --scroll-thumb-hover-color: #454f6b;
+}
+
+:root {
+  /*=======Main theme colors=======*/
+  --first-color: #0e2431;
+  --second-color: #6a59d1;
+  --third-color: #777;
+  /*=======Hover colors=======*/
+  --hover-color: #614fd0;
+  /*=======Background colors=======*/
+  --body-bg-color: #fefefe;
+  --card-bg-color: #fff;
+  --modal-bg-color: #fff;
+  --bg-transparent-color: rgba(0, 0, 0, 0.1);
+  --transparent-color-01: rgba(0, 0, 0, 0.1);
+  --transparent-color-02: rgba(106, 89, 209, 0.1);
+  --line-color: #d7d7d7;
+  /*=======Color Filter=======*/
+  --color-filter: invert(1);
+  /*=======Box shadow=======*/
+  --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+  /*=======Font size=======*/
+  --small-font-size: 0.9em;
+  --normal-font-size: 1em;
+  /*=======Scroll bar colors=======*/
+  --scroll-bar-color: #c5cadf;
+  --scroll-thumb-color: #70768a;
+  --scroll-thumb-hover-color: #454f6b;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +86,7 @@ body {
   height: 45px;
   background-color: var(--second-color);
   color: #fff;
-  font-size: 0.9em;
+  font-size: --small-font-size;
   border-radius: 3px;
   cursor: pointer;
   opacity: 0;
@@ -62,7 +102,7 @@ body {
 .theme-btn {
   z-index: 99999;
   position: fixed;
-  right: 0;
+  left: 0;
   top: 100px;
   background-color: var(--transparent-color-01);
   -webkit-backdrop-filter: blur(20px);
@@ -74,8 +114,13 @@ body {
   box-shadow: var(--box-shadow);
   cursor: pointer;
 }
-.theme-btn .fa-sun {
+
+.theme-btn .fa-sun, .theme-btn.sun .fa-moon {
   display: none;
+}
+
+.theme-btn.sun .fa-sun {
+  display: block;
 }
 
 header {
@@ -324,7 +369,7 @@ header.sticky .navBar {
 
 .educationList .item {
   background-color: var(--card-bg-color);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
   border-bottom: 3px solid var(--second-color);
   padding: 20px;
   margin-top: 15px;
@@ -337,11 +382,11 @@ header.sticky .navBar {
 }
 .educationList .item p {
   color: var(--third-color);
-  font-size: 0.9em;
+  font-size: --small-font-size;
 }
 .educationList .item p span {
   color: var(--first-color);
-  font-size: 1em;
+  font-size: --normal-font-size;
   font-weight: 500;
 }
 
@@ -362,7 +407,7 @@ header.sticky .navBar {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5px;
-  font-size: 0.9em;
+  font-size: --small-font-size;
 }
 .bar .barInfo span {
   font-weight: 500;
@@ -415,7 +460,7 @@ header.sticky .navBar {
   font-weight: 700;
 }
 .experienceCard h5 {
-  font-size: 0.9em;
+  font-size: --small-font-size;
   font-weight: 500;
   font-style: italic;
 }
@@ -545,7 +590,7 @@ header.sticky .navBar {
 .portfolioModelBody button {
   background: var(--second-color);
   color: var(--card-bg-color);
-  font-size: 1em;
+  font-size: --normal-font-size;
   border: none;
   font-weight: 400;
   padding: 5px 15px;
@@ -608,7 +653,7 @@ header.sticky .navBar {
   border: none;
   color: var(--first-color);
   background-color: var(--transparent-color-02);
-  font-size: 1em;
+  font-size: --normal-font-size;
   margin-bottom: 20px;
   padding: 15px 40px 40px 20px;
   border-radius: 5px;
@@ -655,7 +700,7 @@ footer .footerContainer .about h2 {
   opacity: 0.8;
 }
 footer .footerContainer .about p {
-  font-size: 1em;
+  font-size: --normal-font-size;
   font-weight: 300;
   margin-bottom: 30px;
 }
@@ -686,54 +731,7 @@ footer .footerContainer .about p {
 }
 
 .footerCopyright p {
-  font-size: 1em;
+  font-size: --normal-font-size;
   font-weight: 300;
   margin-top: 50px;
-}
-
-.dark-theme {
-  --first-color: #fff;
-  --second-color: #6a59d1;
-  --third-color: #a9afc3;
-  /*=======Background colors=======*/
-  --body-bg-color: #0e1b31;
-  --card-bg-color: #132347;
-  --modal-bg-color: #102048;
-  --bg-transparent-color: rgba(255, 255, 255, 0.1);
-  --transparent-color-01: rgba(255, 255, 255, 0.1);
-  --line-color: #454f6b;
-  /*=======Color Filter=======*/
-  --color-filter: invert(0);
-  /*=======Scroll bar colors=======*/
-  --scroll-bar-color: #c1ceff;
-  --scroll-thumb-color: #282f4e;
-  --scroll-thumb-hover-color: #454f6b;
-}
-
-:root {
-  /*=======Main theme colors=======*/
-  --first-color: #0e2431;
-  --second-color: #6a59d1;
-  --third-color: #777;
-  /*=======Hover colors=======*/
-  --hover-color: #614fd0;
-  /*=======Background colors=======*/
-  --body-bg-color: #fefefe;
-  --card-bg-color: #fff;
-  --modal-bg-color: #fff;
-  --bg-transparent-color: rgba(0, 0, 0, 0.1);
-  --transparent-color-01: rgba(0, 0, 0, 0.1);
-  --transparent-color-02: rgba(106, 89, 209, 0.1);
-  --line-color: #d7d7d7;
-  /*=======Color Filter=======*/
-  --color-filter: invert(1);
-  /*=======Box shadow=======*/
-  --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
-  /*=======Font size=======*/
-  --small-font-size: 0.9em;
-  --normal-font-size: 1em;
-  /*=======Scroll bar colors=======*/
-  --scroll-bar-color: #c5cadf;
-  --scroll-thumb-color: #70768a;
-  --scroll-thumb-hover-color: #454f6b;
 }/*# sourceMappingURL=style.css.map */

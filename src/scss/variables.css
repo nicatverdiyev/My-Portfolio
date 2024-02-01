@@ -1,7 +1,46 @@
-/*=======Main theme colors=======*/
-/*=======Hover colors=======*/
-/*=======Background colors=======*/
-/*=======Color Filter=======*/
-/*=======Box shadow=======*/
-/*=======Font size=======*/
-/*=======Scroll bar colors=======*//*# sourceMappingURL=variables.css.map */
+.dark-theme {
+  --first-color: #fff;
+  --second-color: #6a59d1;
+  --third-color: #a9afc3;
+  /*=======Background colors=======*/
+  --body-bg-color: #0e1b31;
+  --card-bg-color: #132347;
+  --modal-bg-color: #102048;
+  --bg-transparent-color: rgba(255, 255, 255, 0.1);
+  --transparent-color-01: rgba(255, 255, 255, 0.1);
+  --line-color: #454f6b;
+  /*=======Color Filter=======*/
+  --color-filter: invert(0);
+  /*=======Scroll bar colors=======*/
+  --scroll-bar-color: #c1ceff;
+  --scroll-thumb-color: #282f4e;
+  --scroll-thumb-hover-color: #454f6b;
+}
+
+:root {
+  /*=======Main theme colors=======*/
+  --first-color: #0e2431;
+  --second-color: #6a59d1;
+  --third-color: #777;
+  /*=======Hover colors=======*/
+  --hover-color: #614fd0;
+  /*=======Background colors=======*/
+  --body-bg-color: #fefefe;
+  --card-bg-color: #fff;
+  --modal-bg-color: #fff;
+  --bg-transparent-color: rgba(0, 0, 0, 0.1);
+  --transparent-color-01: rgba(0, 0, 0, 0.1);
+  --transparent-color-02: rgba(106, 89, 209, 0.1);
+  --line-color: #d7d7d7;
+  /*=======Color Filter=======*/
+  --color-filter: invert(1);
+  /*=======Box shadow=======*/
+  --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+  /*=======Font size=======*/
+  --small-font-size: 0.9em;
+  --normal-font-size: 1em;
+  /*=======Scroll bar colors=======*/
+  --scroll-bar-color: #c5cadf;
+  --scroll-thumb-color: #70768a;
+  --scroll-thumb-hover-color: #454f6b;
+}/*# sourceMappingURL=variables.css.map */
