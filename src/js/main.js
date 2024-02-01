@@ -42,3 +42,8 @@ scrollTopBtn.addEventListener("click",()=> {
     document.documentElement.scrollTop = 0;
 })
 // -----SCROLL-TO-TOP---BUTTON---END---
+
+// ----DARK--MODE--BUTTON---START----
+
+const themeBtn = document.querySelector(".theme-btn");
+// ----DARK--MODE--BUTTON---END----
