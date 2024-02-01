@@ -31,8 +31,8 @@ html {
 }
 
 body {
-  color: #0e2431;
-  background-color: #fefefe;
+  color: var(--first-color);
+  background-color: var(--body-bg-color);
   margin: 2rem 0 0 0;
   transition: 0.5s ease;
 }
@@ -44,7 +44,7 @@ body {
   bottom: 20px;
   width: 45px;
   height: 45px;
-  background-color: #6a59d1;
+  background-color: var(--second-color);
   color: #fff;
   font-size: 0.9em;
   border-radius: 3px;
@@ -62,16 +62,16 @@ body {
 .theme-btn {
   z-index: 99999;
   position: fixed;
-  left: 0;
+  right: 0;
   top: 100px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--transparent-color-01);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   width: 50px;
   height: 50px;
   font-size: 1.22em;
   border-radius: 5px 0 0 5px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
   cursor: pointer;
 }
 .theme-btn .fa-sun {
@@ -91,7 +91,7 @@ header {
 
 header.sticky {
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
 }
 header.sticky .navBar {
   height: 3.5rem;
@@ -110,14 +110,14 @@ header.sticky .navBar {
   transition: 0.6s ease;
 }
 .navBar .logo {
-  color: #0e2431;
+  color: var(--first-color);
   font-size: 1.3rem;
   font-weight: 600;
 }
 
 .navItems a {
-  color: #0e2431;
-  font-size: 1em;
+  color: var(--first-color);
+  font-size: var(--normal-font-size);
   font-weight: 500;
 }
 
@@ -126,7 +126,7 @@ header.sticky .navBar {
 }
 
 .navItems a:hover {
-  color: #6a59d1;
+  color: var(--second-color);
 }
 
 .homeImage {
@@ -154,12 +154,12 @@ header.sticky .navBar {
   margin-right: 40px;
 }
 .home .homeContainer .media-icons a {
-  color: #6a59d1;
+  color: var(--second-color);
   font-size: 1.5rem;
   margin: 10px 0;
 }
 .home .homeContainer .media-icons a:hover {
-  color: #614fd0;
+  color: var(--hover-color);
 }
 .home .homeContainer .info h2 {
   font-size: 4rem;
@@ -167,14 +167,14 @@ header.sticky .navBar {
   line-height: 70px;
 }
 .home .homeContainer .info h3 {
-  color: #777;
+  color: var(--third-color);
   font-feature-settings: 1.3rem;
   font-weight: 600;
   line-height: 50px;
 }
 .home .homeContainer .info p {
-  color: #777;
-  font-size: 1em;
+  color: var(--third-color);
+  font-size: var(--normal-font-size);
   max-width: 350px;
 }
 .home .homeContainer .homeImage {
@@ -186,9 +186,9 @@ header.sticky .navBar {
 }
 
 .btn {
-  background: #6a59d1;
-  color: #fff;
-  font-size: 1em;
+  background: var(--second-color);
+  color: var(--modal-bg-color);
+  font-size: var(--normal-font-size);
   font-weight: 500;
   display: inline-block;
   margin-top: 25px;
@@ -200,7 +200,7 @@ header.sticky .navBar {
 }
 
 .btn:hover {
-  background: #614fd0;
+  background: var(--hover-color);
 }
 
 .section {
@@ -223,7 +223,7 @@ header.sticky .navBar {
   font-size: 4.5em;
   font-weight: 800;
   margin-bottom: 2rem;
-  background: linear-gradient(to top, transparent 0%, #0e2431 70%);
+  background: linear-gradient(to top, transparent 0%, var(--first-color) 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0.1;
@@ -242,7 +242,7 @@ header.sticky .navBar {
   height: 5px;
   right: 0;
   bottom: 0;
-  background: #6a59d1;
+  background: var(--second-color);
 }
 
 .container {
@@ -276,14 +276,14 @@ header.sticky .navBar {
   margin-bottom: 10px;
 }
 .aboutMe-info .description h4 span {
-  color: #6a59d1;
+  color: var(--second-color);
 }
 .aboutMe-info .description p {
-  color: #777;
-  font-size: 1em;
+  color: var(--third-color);
+  font-size: var(--normal-font-size);
   margin-bottom: 15px;
   padding-bottom: 25px;
-  border-bottom: 2px solid #d7d7d7;
+  border-bottom: 2px solid var(--line-color);
 }
 
 .skills .container .content {
@@ -310,9 +310,9 @@ header.sticky .navBar {
   margin-bottom: 20px;
 }
 .skillsInfo h4 label {
-  background: #6a59d1;
-  color: #fff;
-  font-size: 1em;
+  background: var(--second-color);
+  color: var(--card-bg-color);
+  font-size: var(--normal-font-size);
   font-weight: 400;
   padding: 5px 15px;
   border-radius: 5px;
@@ -323,24 +323,24 @@ header.sticky .navBar {
 }
 
 .educationList .item {
-  background-color: #fff;
+  background-color: var(--card-bg-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  border-bottom: 3px solid #6a59d1;
+  border-bottom: 3px solid var(--second-color);
   padding: 20px;
   margin-top: 15px;
   border-radius: 6px;
   transition: 0.3s ease;
 }
 .educationList .item .year {
-  font-size: 0.9em;
+  font-size: var(--small-font-size);
   margin-bottom: 5px;
 }
 .educationList .item p {
-  color: #777;
+  color: var(--third-color);
   font-size: 0.9em;
 }
 .educationList .item p span {
-  color: #0e2431;
+  color: var(--first-color);
   font-size: 1em;
   font-weight: 500;
 }
@@ -350,8 +350,8 @@ header.sticky .navBar {
 }
 
 .bar {
-  background-color: #fff;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background-color: var(--card-bg-color);
+  box-shadow: var(--box-shadow);
   margin-bottom: 10px;
   padding: 20px;
   border-radius: 6px;
@@ -380,7 +380,7 @@ header.sticky .navBar {
   height: 100%;
   top: 0;
   left: 0;
-  background: #6a59d1;
+  background: var(--second-color);
   border-radius: 2px;
 }
 .bar .html::before {
@@ -400,11 +400,11 @@ header.sticky .navBar {
 }
 
 .experienceCard {
-  background-color: #fff;
-  border-bottom: 3px solid #6a59d1;
+  background-color: var(--card-bg-color);
+  border-bottom: 3px solid var(--second-color);
   padding: 35px;
   border-radius: 6px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
   transition: 0.3s ease;
 }
 .experienceCard .upper {
@@ -420,12 +420,12 @@ header.sticky .navBar {
   font-style: italic;
 }
 .experienceCard span {
-  color: #777;
+  color: var(--third-color);
 }
 .experienceCard .hr {
   width: 100%;
   height: 2px;
-  background-color: #d7d7d7;
+  background-color: var(--line-color);
   margin: 10px 0 22px;
 }
 
@@ -444,7 +444,7 @@ header.sticky .navBar {
   max-width: 100%;
   height: 200px;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
   overflow: hidden;
   cursor: pointer;
 }
@@ -496,7 +496,7 @@ header.sticky .navBar {
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--bg-transparent-color);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   visibility: hidden;
@@ -506,12 +506,12 @@ header.sticky .navBar {
 
 .portfolioModelBody {
   position: relative;
-  background-color: #fff;
+  background-color: var(--modal-bg-color);
   max-width: 600px;
   margin: 20px;
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
   transform: translateY(-50px);
   transition: 0.5s ease;
 }
@@ -543,8 +543,8 @@ header.sticky .navBar {
 }
 
 .portfolioModelBody button {
-  background: #6a59d1;
-  color: #fff;
+  background: var(--second-color);
+  color: var(--card-bg-color);
   font-size: 1em;
   border: none;
   font-weight: 400;
@@ -552,7 +552,7 @@ header.sticky .navBar {
   border-radius: 5px;
 }
 .portfolioModelBody button a {
-  color: #fff;
+  color: var(--card-bg-color);
 }
 
 .contact .container .content {
@@ -569,11 +569,11 @@ header.sticky .navBar {
   margin-bottom: 40px;
 }
 .contact .container .content .contactLeft .contactList li span {
-  color: #777;
+  color: var(--third-color);
   margin-left: 40px;
 }
 .contact .container .content .contactLeft .contactList li span a {
-  color: #777;
+  color: var(--third-color);
 }
 .contact .container .content .contactLeft .contactList li h3 {
   font-size: 1.3em;
@@ -581,17 +581,17 @@ header.sticky .navBar {
   margin-bottom: 10px;
 }
 .contact .container .content .contactLeft .contactList li h3 i {
-  color: #6a59d1;
+  color: var(--second-color);
   font-size: 1.3em;
   padding-right: 10px;
 }
 .contact .container .content .contactRight p {
-  color: #777;
+  color: var(--third-color);
   font-size: 1.6em;
   margin-bottom: 30px;
 }
 .contact .container .content .contactRight p span {
-  color: #0e2431;
+  color: var(--first-color);
   font-weight: 700;
 }
 .contact .container .content .contactRight .secondRow {
@@ -689,4 +689,51 @@ footer .footerContainer .about p {
   font-size: 1em;
   font-weight: 300;
   margin-top: 50px;
+}
+
+.dark-theme {
+  --first-color: #fff;
+  --second-color: #6a59d1;
+  --third-color: #a9afc3;
+  /*=======Background colors=======*/
+  --body-bg-color: #0e1b31;
+  --card-bg-color: #132347;
+  --modal-bg-color: #102048;
+  --bg-transparent-color: rgba(255, 255, 255, 0.1);
+  --transparent-color-01: rgba(255, 255, 255, 0.1);
+  --line-color: #454f6b;
+  /*=======Color Filter=======*/
+  --color-filter: invert(0);
+  /*=======Scroll bar colors=======*/
+  --scroll-bar-color: #c1ceff;
+  --scroll-thumb-color: #282f4e;
+  --scroll-thumb-hover-color: #454f6b;
+}
+
+:root {
+  /*=======Main theme colors=======*/
+  --first-color: #0e2431;
+  --second-color: #6a59d1;
+  --third-color: #777;
+  /*=======Hover colors=======*/
+  --hover-color: #614fd0;
+  /*=======Background colors=======*/
+  --body-bg-color: #fefefe;
+  --card-bg-color: #fff;
+  --modal-bg-color: #fff;
+  --bg-transparent-color: rgba(0, 0, 0, 0.1);
+  --transparent-color-01: rgba(0, 0, 0, 0.1);
+  --transparent-color-02: rgba(106, 89, 209, 0.1);
+  --line-color: #d7d7d7;
+  /*=======Color Filter=======*/
+  --color-filter: invert(1);
+  /*=======Box shadow=======*/
+  --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+  /*=======Font size=======*/
+  --small-font-size: 0.9em;
+  --normal-font-size: 1em;
+  /*=======Scroll bar colors=======*/
+  --scroll-bar-color: #c5cadf;
+  --scroll-thumb-color: #70768a;
+  --scroll-thumb-hover-color: #454f6b;
 }/*# sourceMappingURL=style.css.map */

@@ -6,8 +6,8 @@ html{
     scroll-behavior:smooth;
 }
 body{
-    color: $--first-color;
-    background-color: $--body-bg-color;
+    color: var(--first-color);
+    background-color: var(--body-bg-color);
     margin: 2rem 0 0 0;
     transition: .5s ease;
 
@@ -22,7 +22,7 @@ body{
     bottom: 20px;
     width: 45px;
     height: 45px;
-    background-color: $--second-color;
+    background-color: var(--second-color);
     color: #fff;
     font-size: $--small-font-size;
     border-radius: 3px;
@@ -42,15 +42,15 @@ body{
 .theme-btn{
     z-index: 99999;
     position: fixed;
-    left: 0;
+    right: 0;
     top: 100px;
-    background-color: $--transparent-color-01;
+    background-color: var(--transparent-color-01);
     backdrop-filter: blur(20px);
     width: 50px;
     height: 50px;
     font-size: 1.22em;
     border-radius: 5px 0 0 5px;
-    box-shadow: $--box-shadow;
+    box-shadow: var(--box-shadow);
     cursor: pointer;
 
     & .fa-sun{
@@ -74,7 +74,7 @@ header{
 }
 header.sticky{
     background: rgba(255,255,255,0.1);
-    box-shadow: $--box-shadow;
+    box-shadow: var(--box-shadow);
 
     & .navBar{
         height: calc(2.5rem + 1rem);
@@ -94,15 +94,15 @@ header.sticky{
     transition: .6s ease;
 
     & .logo{
-        color: $--first-color;
+        color: var(--first-color);
         font-size: 1.3rem;
         font-weight: 600;
     }
 }
  
 .navItems a{
-    color: $--first-color;
-    font-size: $--normal-font-size;
+    color: var(--first-color);
+    font-size: var(--normal-font-size);
     font-weight: 500;
 }
 // Menu arasındakı boşluqlar
@@ -110,7 +110,7 @@ header.sticky{
     margin-right: 50px;
 }
 .navItems a:hover{
-    color: $--second-color;
+    color: var(--second-color);
 }
 // ----HEADER---END----
 
@@ -139,13 +139,13 @@ header.sticky{
             margin-right: 40px;
 
             & a{
-                color: $--second-color;
+                color: var(--second-color);
                 font-size: 1.5rem;
                 margin: 10px 0;
             }
 
             & a:hover{
-                color: $--hover-color;
+                color: var(--hover-color);
             }
 
         }
@@ -158,15 +158,15 @@ header.sticky{
             }
 
             & h3{
-                color: $--third-color;
+                color: var(--third-color);
                 font-feature-settings: 1.3rem;
                 font-weight: 600;
                 line-height: 50px;
             }
 
             & p{
-                color: $--third-color;
-                font-size: $--normal-font-size;
+                color: var(--third-color);
+                font-size: var(--normal-font-size);
                 max-width: 350px;
             }
         }
@@ -183,9 +183,9 @@ header.sticky{
 }
 
 .btn{
-    background: $--second-color;
-    color: $--modal-bg-color;
-    font-size: $--normal-font-size;
+    background: var(--second-color);
+    color: var(--modal-bg-color);
+    font-size: var(--normal-font-size);
     font-weight: 500;
     display: inline-block;
     margin-top: 25px;
@@ -196,7 +196,7 @@ header.sticky{
     cursor: pointer;
 }
 .btn:hover{
-    background: $--hover-color;
+    background: var(--hover-color);
 }
 // ---Ana sehife---SECTİON---END---
 
@@ -220,7 +220,7 @@ header.sticky{
     font-size: 4.5em;
     font-weight: 800;
     margin-bottom: 2rem;
-    background: linear-gradient(to top, transparent 0%, $--first-color 70%);
+    background: linear-gradient(to top, transparent 0%, var(--first-color) 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: .1;
@@ -237,7 +237,7 @@ header.sticky{
     height: 5px;
     right: 0;
     bottom: 0;
-    background: $--second-color;
+    background: var(--second-color);
 }
 .container{
     position: relative;
@@ -272,16 +272,16 @@ header.sticky{
             margin-bottom: 10px;
 
             & span{
-                color: $--second-color;
+                color: var(--second-color);
             }
         }
 
         & p{
-            color: $--third-color;
-            font-size: $--normal-font-size;
+            color: var(--third-color);
+            font-size: var(--normal-font-size);
             margin-bottom: 15px;
             padding-bottom: 25px;
-            border-bottom: 2px solid $--line-color;
+            border-bottom: 2px solid var(--line-color);
         }
     }
     
@@ -313,9 +313,9 @@ header.sticky{
         margin-bottom: 20px;
 
         & label{
-            background: $--second-color;
-            color: $--card-bg-color;
-            font-size: $--normal-font-size;
+            background: var(--second-color);
+            color: var(--card-bg-color);
+            font-size: var(--normal-font-size);
             font-weight: 400;
             padding: 5px 15px;
             border-radius: 5px;
@@ -330,25 +330,25 @@ header.sticky{
 .educationList{
 
     & .item{
-        background-color: $--card-bg-color;
+        background-color: var(--card-bg-color);
         box-shadow: $--box-shadow;
-        border-bottom: 3px solid $--second-color;
+        border-bottom: 3px solid var(--second-color);
         padding: 20px;
         margin-top: 15px;
         border-radius: 6px;
         transition: .3s ease;
 
         & .year{
-            font-size: $--small-font-size;
+            font-size: var(--small-font-size);
             margin-bottom: 5px;
         }
 
         & p{
-            color: $--third-color;
+            color: var(--third-color);
             font-size: $--small-font-size;
 
             & span{
-                color: $--first-color;
+                color: var(--first-color);
                 font-size: $--normal-font-size;
                 font-weight: 500;
             }
@@ -363,8 +363,8 @@ header.sticky{
 }
 
 .bar{
-    background-color: $--card-bg-color;
-    box-shadow: $--box-shadow;
+    background-color: var(--card-bg-color);
+    box-shadow: var(--box-shadow);
     margin-bottom: 10px;
     padding: 20px;
     border-radius: 6px;
@@ -395,7 +395,7 @@ header.sticky{
             height: 100%;
             top: 0;
             left: 0;
-            background: $--second-color;
+            background: var(--second-color);
             border-radius: 2px;
         }
     }
@@ -423,11 +423,11 @@ header.sticky{
 }
 
 .experienceCard{
-    background-color: $--card-bg-color;
-    border-bottom: 3px solid $--second-color;
+    background-color: var(--card-bg-color);
+    border-bottom: 3px solid var(--second-color);
     padding: 35px;
     border-radius: 6px;
-    box-shadow: $--box-shadow;
+    box-shadow: var(--box-shadow);
     transition: .3s ease;
 
     & .upper{
@@ -446,12 +446,12 @@ header.sticky{
     }
 
     & span{
-        color: $--third-color;
+        color: var(--third-color);
     }
     & .hr{
         width: 100%;
         height: 2px;
-        background-color: $--line-color;
+        background-color: var(--line-color);
         margin: 10px 0 22px;
     }
 }
@@ -474,7 +474,7 @@ header.sticky{
         max-width: 100%;
         height: 200px;
         border-radius: 10px;
-        box-shadow: $--box-shadow;
+        box-shadow: var(--box-shadow);
         overflow: hidden;
         cursor: pointer;
         & img{
@@ -525,7 +525,7 @@ header.sticky{
     height: 100vh;
     top: 0;
     left: 0;
-    background-color: $--bg-transparent-color;
+    background-color: var(--bg-transparent-color);
     backdrop-filter: blur(20px);
     visibility: hidden;
     opacity: 0;
@@ -533,12 +533,12 @@ header.sticky{
 }
 .portfolioModelBody{
     position: relative;
-    background-color: $--modal-bg-color;
+    background-color: var(--modal-bg-color);
     max-width: 600px;
     margin: 20px;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: $--box-shadow;
+    box-shadow: var(--box-shadow);
     transform: translateY(-50px);
     transition: .5s ease;
 }
@@ -571,8 +571,8 @@ header.sticky{
       
     
         & button{
-            background: $--second-color;
-            color: $--card-bg-color;
+            background: var(--second-color);
+            color: var(--card-bg-color);
             font-size: $--normal-font-size;
             border: none;
             font-weight: 400;
@@ -581,7 +581,7 @@ header.sticky{
 
             
             & a{
-                color: $--card-bg-color;
+                color: var(--card-bg-color);
 
             }
         }
@@ -608,11 +608,11 @@ header.sticky{
                     margin-bottom: 40px;
 
                     & span{
-                        color: $--third-color;
+                        color: var(--third-color);
                         margin-left: 40px;
 
                         & a{
-                            color: $--third-color;
+                            color: var(--third-color);
                         }
                     }
 
@@ -622,7 +622,7 @@ header.sticky{
                         margin-bottom: 10px;
 
                         & i{
-                            color: $--second-color;
+                            color: var(--second-color);
                             font-size: 1.3em;
                             padding-right: 10px;
                         }
@@ -633,12 +633,12 @@ header.sticky{
 
             & .contactRight{
                 & p{
-                    color: $--third-color;
+                    color: var(--third-color);
                     font-size: 1.6em;
                     margin-bottom: 30px;
 
                     & span{
-                        color: $--first-color;
+                        color: var(--first-color);
                         font-weight: 700;
                     }
                 }
@@ -748,3 +748,66 @@ footer{
 }
 // -----FOOTER----BÖLMESİ----END-- 
 
+.dark-theme{
+
+    --first-color: #fff;
+   --second-color: #6a59d1;
+   --third-color: #a9afc3;
+   
+       /*=======Background colors=======*/
+   --body-bg-color: #0e1b31;
+   --card-bg-color: #132347;
+   --modal-bg-color: #102048;
+   --bg-transparent-color: rgba(255, 255, 255, 0.1);
+   --transparent-color-01: rgba(255, 255, 255, 0.1);
+   --line-color: #454f6b;
+     
+       /*=======Color Filter=======*/
+   --color-filter: invert(0);
+   
+       /*=======Scroll bar colors=======*/
+   --scroll-bar-color: #c1ceff;
+   --scroll-thumb-color: #282f4e;
+   --scroll-thumb-hover-color: #454f6b;
+   
+   
+   }
+
+
+:root{
+
+    /*=======Main theme colors=======*/
+--first-color: #0e2431;
+--second-color: #6a59d1;
+--third-color: #777;
+  
+    /*=======Hover colors=======*/
+--hover-color: #614fd0;
+  
+    /*=======Background colors=======*/
+--body-bg-color: #fefefe;
+--card-bg-color: #fff;
+--modal-bg-color: #fff;
+--bg-transparent-color: rgba(0, 0, 0, 0.1);
+--transparent-color-01: rgba(0, 0, 0, 0.1);
+--transparent-color-02: rgba(106, 89, 209, 0.1);
+--line-color: #d7d7d7;
+  
+    /*=======Color Filter=======*/
+--color-filter: invert(1);
+  
+    /*=======Box shadow=======*/
+--box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+  
+    /*=======Font size=======*/
+--small-font-size: 0.9em;
+--normal-font-size: 1em;
+  
+    /*=======Scroll bar colors=======*/
+--scroll-bar-color: #c5cadf;
+--scroll-thumb-color: #70768a;
+--scroll-thumb-hover-color: #454f6b;
+
+
+
+}
