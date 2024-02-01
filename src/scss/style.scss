@@ -634,7 +634,68 @@ header.sticky{
 footer{
     display: flex;
     justify-content: center;
-}
+    align-items: center;
+    flex-direction: column;
+    background-color: $--second-color;
+    width: 100%;
+    margin-top: 50px;
+    padding: 3rem 2rem;
+    color: #fff;
 
+    & a{
+        color: white;
+    }
+
+    & .footerContainer{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1150px;
+
+        & .about h2{
+            font-size: 3em;
+            font-weight: 600;
+            background: linear-gradient(to top,transparent 0%, #fff 50%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: .8;
+        }
+
+        & .about p{
+            font-size: $--normal-font-size;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+    }
+}
+.footerContainer .info,
+.footerContainer .follow{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    & h3{
+        font-size: 1.1em;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    & ul{
+        display: flex;
+    }
+
+    & a{
+        margin: 20px;
+        
+    }
+}
+.footerContainer .follow a{
+    font-size: 1.5em;
+}
+.footerCopyright p{
+    font-size: $--normal-font-size;
+    font-weight: 300;
+    margin-top: 50px;
+}
 // -----FOOTER----BÖLMESİ----END-- 
 

@@ -588,4 +588,64 @@ header.sticky .navBar {
 footer {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #6a59d1;
+  width: 100%;
+  margin-top: 50px;
+  padding: 3rem 2rem;
+  color: #fff;
+}
+footer a {
+  color: white;
+}
+footer .footerContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1150px;
+}
+footer .footerContainer .about h2 {
+  font-size: 3em;
+  font-weight: 600;
+  background: linear-gradient(to top, transparent 0%, #fff 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.8;
+}
+footer .footerContainer .about p {
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.footerContainer .info,
+.footerContainer .follow {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footerContainer .info h3,
+.footerContainer .follow h3 {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.footerContainer .info ul,
+.footerContainer .follow ul {
+  display: flex;
+}
+.footerContainer .info a,
+.footerContainer .follow a {
+  margin: 20px;
+}
+
+.footerContainer .follow a {
+  font-size: 1.5em;
+}
+
+.footerCopyright p {
+  font-size: 1em;
+  font-weight: 300;
+  margin-top: 50px;
 }/*# sourceMappingURL=style.css.map */
