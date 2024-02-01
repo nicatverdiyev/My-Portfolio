@@ -606,8 +606,8 @@ header.sticky .navBar {
 }
 .contact .container .content .contactRight input, .contact .container .content .contactRight textarea {
   border: none;
-  color: #0e2431;
-  background-color: rgba(106, 89, 209, 0.1);
+  color: var(--first-color);
+  background-color: var(--transparent-color-02);
   font-size: 1em;
   margin-bottom: 20px;
   padding: 15px 40px 40px 20px;
@@ -619,11 +619,11 @@ header.sticky .navBar {
 }
 
 ::-moz-placeholder {
-  color: #0e2431;
+  color: var(--first-color);
 }
 
 ::placeholder {
-  color: #0e2431;
+  color: var(--first-color);
 }
 
 footer {
@@ -631,7 +631,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #6a59d1;
+  background-color: var(--second-color);
   width: 100%;
   margin-top: 50px;
   padding: 3rem 2rem;

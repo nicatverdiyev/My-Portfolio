@@ -655,8 +655,8 @@ header.sticky{
 
                 & input,textarea{
                     border: none;
-                    color: $--first-color;
-                    background-color: $--transparent-color-02;
+                    color: var(--first-color);
+                    background-color: var(--transparent-color-02);
                     font-size: $--normal-font-size;
                     margin-bottom: 20px;
                     padding: 15px 40px 40px 20px;
@@ -673,7 +673,7 @@ header.sticky{
 }
 
 ::placeholder{
-    color: $--first-color;
+    color: var(--first-color);
 }
 
 // -------ELAQE----BÖLMESİ----END---
@@ -685,7 +685,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: $--second-color;
+    background-color: var(--second-color);
     width: 100%;
     margin-top: 50px;
     padding: 3rem 2rem;
