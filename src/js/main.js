@@ -88,3 +88,14 @@ navItem.forEach((navItem) => {
 });
 
 // -----RESPONSİV MENYU İCONLAR END--------
+
+// ScrollReveal({
+//     reset: true,
+//     distance: '60px',
+//     duraction: 2500,
+//     delay: 100
+// });
+
+// ScrollReveal().reveal('.home .info h2', {delay: 500, origin:'left'});
+// ScrollReveal().reveal('.home .info h3, .home .info p', {delay: 600, origin:'right'});
+// ScrollReveal().reveal('.home .info .btn', {delay: 500, origin:'right'});
