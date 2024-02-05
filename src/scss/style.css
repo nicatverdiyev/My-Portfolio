@@ -179,7 +179,8 @@ header.sticky .navBar {
 }
 
 .homeImage {
-  margin-right: -8rem;
+  display: flex;
+  justify-content: center;
 }
 
 .home {
