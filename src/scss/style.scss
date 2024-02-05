@@ -209,7 +209,11 @@ header.sticky{
 // ---Ana sehife---SECTİON---END---
 
 // <!-- -----HAQQINDA----BÖLMƏSİ---START--- -->
-
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .section{
     position: relative;
     max-width: 1150px;

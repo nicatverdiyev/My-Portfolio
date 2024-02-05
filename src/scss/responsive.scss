@@ -75,11 +75,65 @@
     .home .homeContainer .info{
         font-size: 0.85rem;
     }
-    // -----ANA SEHİFE----BÖLMESİ--START--
+    // -----ANA SEHİFE----BÖLMESİ--END--
     
+    // -----HAQQINDA----BÖLMESİ--START--
+
     .aboutMe .container .content{
         display: grid;
         width: 100;
         row-gap: 20px;
     }
+
+    .aboutMe-img img{
+        min-width: 0;
+        width: 100%;
+    }
+    .aboutMe-info{
+        min-width: 0;
+        width: 100%;
+    }
+    
+    // -----HAQQINDA----BÖLMESİ--END--
+
+    // -----ELAQE----BÖLMESİ--START--
+
+    .contact .content{
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+
+    .contact .contactLeft{
+        margin-bottom: 40px;
+    }
+
+    .contactForm .secondRow{
+        flex-direction: column;
+    }
+    .contactForm .secondRow input{
+        width: 100%;
+    }
+
+    // -----ELAQE----BÖLMESİ--END--
+
+    // -----FOOTER----BÖLMESİ--START--
+
+    footer .footerContainer{
+        flex-direction: column;
+    }
+
+    .footerContainer .about,
+    .footerContainer .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    // -----FOOTER----BÖLMESİ--END--
+
+
+
+
+
 }
