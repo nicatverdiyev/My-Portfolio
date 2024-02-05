@@ -14,11 +14,12 @@
         background: var(--transparent-color-01);
         visibility: hidden;
         opacity: 0;
-        transition: .3s ease;
     }
     .navigation.active{
         visibility: visible;
         opacity: 1;
+        transition: .3s ease;
+
     }
 
 

@@ -89,13 +89,22 @@ navItem.forEach((navItem) => {
 
 // -----RESPONSİV MENYU İCONLAR END--------
 
-// ScrollReveal({
-//     reset: true,
-//     distance: '60px',
-//     duraction: 2500,
-//     delay: 100
-// });
+ ScrollReveal({
+        // reset: true,
+     distance: '60px',
+     duraction: 2500,
+     delay: 100
+ });
 
-// ScrollReveal().reveal('.home .info h2', {delay: 500, origin:'left'});
-// ScrollReveal().reveal('.home .info h3, .home .info p', {delay: 600, origin:'right'});
-// ScrollReveal().reveal('.home .info .btn', {delay: 500, origin:'right'});
+ScrollReveal().reveal('.home .info h2, .section-title-01, .section-title-02', {delay: 500, origin:'right'});
+ScrollReveal().reveal('.media-icons i, .contactLeft li', {delay: 400, origin:'bottom', interval: 200});
+ScrollReveal().reveal('.skills-description, .contactLeft h2', {delay: 400, origin:'top'});
+ScrollReveal().reveal('.home .info .btn', {delay: 400, origin:'left'});
+ScrollReveal().reveal('.home .info h3, .home .info p, .aboutMe-info, .btn', {delay: 400, origin:'top'});
+ScrollReveal().reveal('.homeImage, .aboutMe-img', {delay: 500, origin:'bottom'});
+ScrollReveal().reveal('.aboutMe .description, .contactRight', {delay: 600, origin:'right'});
+ScrollReveal().reveal('.experienceCard, .education, .portfolio .imgCard', {delay: 800, origin:'bottom', interval: 200});
+ScrollReveal().reveal('footer .group', { delay: 500, origin: 'top', interval: 200 });
+
+
+
