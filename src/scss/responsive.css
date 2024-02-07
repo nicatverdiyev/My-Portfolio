@@ -118,7 +118,7 @@
     margin-left: 0 !important;
   }
 }
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 768px) {
   body {
     margin: 5rem 0 0 0;
   }
