@@ -137,7 +137,7 @@
     display: block;
   }
   .homeContainer .homeImage img {
-    width: 55% !important;
+    width: 60% !important;
     transform: translate(80px, -180px) !important;
   }
   .home .homeContainer .info {
@@ -148,11 +148,5 @@
   }
   .footerCopyright {
     margin-left: 0 !important;
-  }
-}
-@media screen and (min-width: 430px) {
-  .homeContainer .homeImage img {
-    width: 55% !important;
-    transform: translate(80px, -180px) !important;
   }
 }/*# sourceMappingURL=responsive.css.map */
