@@ -193,3 +193,9 @@
     // -----ANA SEHİFE---END---
 
 }
+@media screen and (max-width:430px) {
+     .homeContainer .homeImage img{
+         width: 55% !important;
+        transform: translate(80px, -180px) !important;
+    }
+}
