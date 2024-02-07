@@ -1,4 +1,4 @@
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 992px) {
   .navigation {
     position: fixed;
     width: 100%;
@@ -137,6 +137,7 @@
     display: block;
   }
   .homeContainer .homeImage img {
+    width: 55% !important;
     transform: translate(80px, -180px) !important;
   }
   .home .homeContainer .info {

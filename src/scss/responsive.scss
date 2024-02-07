@@ -1,4 +1,4 @@
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 992px) {
 
     // -----HEADER NAVİGATİON MENU---START----
 
@@ -178,7 +178,7 @@
         display: block;
     }
     .homeContainer .homeImage img{
-        // width: 70% !important;
+         width: 55% !important;
         transform: translate(80px, -180px) !important;
     }
     .home .homeContainer .info{
